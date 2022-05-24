@@ -20,11 +20,7 @@ body {
     width: 6vw;
 }
 
-@media (max-width: 968px) {
-    .logo {
-        display: none;
-    }
-}
+
 
 .nav-link {
     transition: all .5s;
@@ -47,6 +43,44 @@ body {
 
 .lh-1 {
     color: #fff;
+}
+
+.line-1 {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.texto-animado {
+    animation: typewriter 1s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 18rem;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
 }
 
 .texto-inicio {
@@ -79,9 +113,15 @@ body {
     }
 }
 
+@media (max-width: 968px) {
+    .logo {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .container-main {
-        background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)),url(img/hero.jpg);
+        background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(img/hero.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -101,7 +141,7 @@ body {
 
 .fb {
     background: #333;
-    padding:10px;
+    padding: 10px;
 }
 
 .btn1 {
@@ -116,7 +156,7 @@ body {
 
 
 .footer .redes {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
@@ -127,7 +167,7 @@ body {
     margin: 20px 20px;
     width: 50px;
     height: 50px;
-    padding: 10px; 
+    padding: 10px;
 }
 
 .redes a {
@@ -139,7 +179,7 @@ body {
     transition: .2;
 }
 
-.redes i:hover a{
+.redes i:hover a {
     filter: blur(1px);
 }
 
@@ -159,7 +199,7 @@ body {
 .redes .visa:hover {
     background: rgb(6, 48, 239);
 }
-   
+
 .redes .bitcoin:hover {
     background: rgb(132, 141, 10);
 }
@@ -168,10 +208,10 @@ body {
 
 
 @media (max-width: 768px) {
-.col-md-4 {
-    flex: 0 0 auto;
-    width: auto;
-    margin: auto;
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: auto;
+        margin: auto;
     }
 }
 
@@ -180,12 +220,12 @@ body {
     .col-md-4 {
         flex: 0 0 auto;
         width: auto;
-        }
+    }
 
     .margen {
         margin-left: 0.8rem;
     }
-    
+
     .nav {
         margin-left: 0.5rem;
     }
@@ -194,62 +234,21 @@ body {
 
 
 /*------------------------PRODUCTOS------------------------*/
-/*
-main {
-    background: #000;
-}
-
-
-.contenedor-productos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);      
-    justify-content: center;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-    grid-gap: 2rem;
-}
-
-.main-productos h2 {
-    text-align: center;
-    font-size: 2.8rem;
-    padding: 5rem;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 23%, rgba(49,49,56,1) 46%, rgba(0,0,0,1) 65%);
-    color: #ffffff;
-    font-family: 'Diplomata SC', cursive;
-}
-
-.imagenes-p {
-    width:  250px;
-    height: 250px;
-    filter: brightness(70%);
-    cursor: pointer;
-   	margin: auto;
-    transition: all 1s;
-}
-
-.imagenes-p:hover {
-    filter: brightness(100%);
-    transform: scale(1.3);
-}
-
-
-
-
-.contenedor-productos .titulo-productos {
-    color: rgb(62, 122, 182);
-    text-align: center;
-}
-*/
-
 .color-fondo {
     background: #000 !important;
+}
+
+.card {
+    border: none;
 }
 
 
 .card-img-top {
     width: 40%;
 }
-.card-title, .card-text {
+
+.card-title,
+.card-text {
     color: #fff;
     border: none;
 }
@@ -261,7 +260,7 @@ main {
 .card-img-top {
     filter: brightness(70%);
     cursor: pointer;
-   	margin: auto;
+    margin: auto;
     transition: all 1s;
     transition: all 1s;
 }
@@ -295,9 +294,9 @@ main {
 }
 
 
-.nosotros-texto{
+.nosotros-texto {
     flex-direction: column;
-    padding: 1rem;   
+    padding: 1rem;
 }
 
 .nosotrostextos-titulo {
@@ -305,7 +304,7 @@ main {
     font-family: 'Roboto Mono', monospace;
     justify-content: center;
     align-items: center;
-    color: #fff;   
+    color: #fff;
 }
 
 .nosotrostextos-subtitulo {
@@ -323,7 +322,7 @@ main {
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-family: 'Patrick Hand', cursive; 
+    font-family: 'Patrick Hand', cursive;
 }
 
 .historia {
@@ -338,7 +337,7 @@ main {
     .main-container {
         flex-direction: column;
     }
-    
+
     .img {
         flex-direction: column;
         margin: auto;
@@ -348,7 +347,7 @@ main {
     .historia {
         margin: auto;
     }
-    
+
 }
 
 
@@ -374,7 +373,7 @@ body {
     border-radius: 10px;
     font-size: 20px;
     box-shadow: 7px 13px 37px rgba(8, 100, 230, 0.632);
-    
+
 }
 
 .formRegistro h4 {
@@ -399,7 +398,7 @@ body {
     height: 40px;
     line-height: 40px;
     text-align: center;
-    font-size: 15px;   
+    font-size: 15px;
 }
 
 .formRegistro a {
@@ -453,5 +452,3 @@ body {
         width: 70%;
     }
 }
-
-
