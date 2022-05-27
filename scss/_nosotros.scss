@@ -1,0 +1,31 @@
+// NOSOTROS //
+
+.main-container {
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 20rem;
+        width: 40rem;
+        margin-left: 7rem;
+        position: relative;
+    }
+}
+
+.nosotrostextos-titulo {
+    font-size: 3.3rem;
+    font-family: 'Roboto Mono', monospace;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    .nosotrostextos-parrafo {
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: 'Patrick Hand', cursive;
+    }
+}

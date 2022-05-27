@@ -1,0 +1,76 @@
+// CONTACTO //
+
+.formRegistro {
+    width: 400px;
+    background-color: rgba(26, 32, 83, 0.463);
+    color: #fff;
+    padding: 30px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-family: 'Akshar', sans-serif;
+    border: 2px solid rgba(8, 100, 230, 0.632);
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 7px 13px 37px rgba(8, 100, 230, 0.632);
+
+    h4 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+}
+
+.camposTexto {
+    width: 100%;
+    background: #333;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 2px solid rgba(8, 100, 230, 0.632);
+    font-family: 'Akshar', sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+
+.formRegistro {
+    p {
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    textarea {
+        height: 120px;
+        resize: none;
+    }
+}
+
+.formRegistro a {
+    text-decoration: none;
+    color: rgba(8, 100, 230, 0.632);
+}
+
+.formRegistro a:hover {
+    text-decoration: none;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.formRegistro .boton {
+    width: 100%;
+    background: rgba(8, 100, 230, 0.632);
+    border: none;
+    padding: 12px;
+    color: #fff;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.formRegistro .boton:hover {
+    background: rgba(50, 94, 155, 0.632);
+    cursor: pointer;
+}

@@ -1,0 +1,169 @@
+// INDEX //
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+$blancoLetras: #fff;
+
+body {
+    overflow-x: hidden;
+    background: #000; 
+}
+
+.navbar {
+    background-color: #000;
+}
+
+
+.logo {
+    width: 6vw;
+}
+
+.nav-link {
+    transition: all .5s;
+    &:hover {
+        color: #48e !important;
+    }
+}
+
+.btn-outline-success {
+    color: #48e;
+    border-color: #48e;
+    &:hover {
+        background-color: #48e;
+    }
+}
+
+.lh-1 {
+    color: $blancoLetras;
+}
+
+.line-1 {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.texto-animado {
+    animation: typewriter 1s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 18rem;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.texto-inicio {
+    color: $blancoLetras;
+}
+
+.color-letra {
+    color: $blancoLetras;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.container-main {
+    background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(../img/video-inicio.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+.seccion1 {
+    background: #333;
+}
+
+.fb {
+    background: #333;
+    padding: 10px;
+}
+
+.btn1 {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    text-decoration: none;
+    padding: .5rem;
+}
+
+.footer {
+    .redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+}
+
+.redes {
+    a{
+        margin: 20px 20px;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        background: #333;
+        color: $blancoLetras;
+        line-height: 50px;
+        font-size: 18px;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .2);
+        transition: .2;
+    }
+}
+
+.redes i:hover a {
+    filter: blur(1px);
+}
+
+.redes a:hover {
+    transform: translateY(-3px) scale(1.05);
+    filter: none;
+}
+
+.redes .facebook:hover {
+    background: rgb(39, 55, 128);
+}
+
+.redes .instagram:hover {
+    background: rgb(186, 23, 67);
+}
+
+.redes .visa:hover {
+    background: rgb(6, 48, 239);
+}
+
+.redes .bitcoin:hover {
+    background: rgb(132, 141, 10);
+}

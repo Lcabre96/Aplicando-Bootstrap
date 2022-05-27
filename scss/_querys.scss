@@ -1,0 +1,73 @@
+// MEDIA QUERYS //
+
+// INDEX QUERYS //
+
+@media (min-width: 1199px) {
+    .btn-main {
+        width: 70%;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 968px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-main {
+        background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(img/hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .btn-main {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: auto;
+        margin: auto;
+    }
+}
+
+@media (min-width: 576px) {
+
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .margen {
+        margin-left: 0.8rem;
+    }
+
+    .nav {
+        margin-left: 0.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .formRegistro {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .formRegistro {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .formRegistro {
+        width: 70%;
+    }
+}

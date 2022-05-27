@@ -1,0 +1,34 @@
+.color-fondo {
+    background: #000 !important;
+}
+
+.card {
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.card-img-top {
+    width: 40%;
+    filter: brightness(70%);
+    cursor: pointer;
+    margin: auto;
+    transition: all 1s;
+    transition: all 1s;
+    &:hover {
+        filter: brightness(100%);
+        transform: scale(1.1);
+    }
+}
+
+.col {
+    border-style: none;
+}
+
+.card-title, .card-text {
+    color: #fff;
+    border: none;
+}
+
+.col {
+    border-style: none;
+}
