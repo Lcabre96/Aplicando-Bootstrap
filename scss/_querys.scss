@@ -18,7 +18,7 @@
 
 @media (max-width: 768px) {
     .container-main {
-        background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(img/hero.jpg);
+        background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)), url(.././img/hero.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -69,5 +69,11 @@
 @media (max-width: 420px) {
     .formRegistro {
         width: 70%;
+    }
+
+    .img-nosotros {
+        width: 80vw;
+        margin: auto;
+
     }
 }

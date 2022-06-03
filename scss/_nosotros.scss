@@ -7,7 +7,7 @@
     align-items: center;
 
     img {
-        height: 20rem;
+        height: 1rem;
         width: 40rem;
         margin-left: 7rem;
         position: relative;
@@ -28,4 +28,8 @@
         color: #fff;
         font-family: 'Patrick Hand', cursive;
     }
+}
+
+.nosotros-seccion {
+    overflow-x: hidden;
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -5,8 +7,12 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background: #000;
+}
+
+.seccion-index {
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -77,6 +83,7 @@ body {
 
 .texto-inicio {
   color: #fff;
+  font-family: 'Indie Flower', cursive;
 }
 
 .color-letra {
@@ -197,6 +204,10 @@ body {
   border-style: none;
 }
 
+span {
+  color: #23d331;
+}
+
 .main-container {
   height: 83vh;
   display: flex;
@@ -205,7 +216,7 @@ body {
 }
 
 .main-container img {
-  height: 20rem;
+  height: 1rem;
   width: 40rem;
   margin-left: 7rem;
   position: relative;
@@ -225,6 +236,10 @@ body {
   align-items: center;
   color: #fff;
   font-family: 'Patrick Hand', cursive;
+}
+
+.nosotros-seccion {
+  overflow-x: hidden;
 }
 
 .formRegistro {
@@ -315,7 +330,7 @@ body {
 
 @media (max-width: 768px) {
   .container-main {
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.9)), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.9)), url(.././img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -364,5 +379,10 @@ body {
 @media (max-width: 420px) {
   .formRegistro {
     width: 70%;
+  }
+
+  .img-nosotros {
+    width: 80vw;
+    margin: auto;
   }
 }

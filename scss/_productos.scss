@@ -1,10 +1,16 @@
+
+$cartaPropiedades: (
+    borde: none,
+    fondo: rgb(255, 255, 255),  
+);
+
 .color-fondo {
     background: #000 !important;
 }
 
 .card {
-    border: none;
-    background-color: rgb(255, 255, 255);
+    border: map-get($cartaPropiedades, borde);
+    background-color: map-get($cartaPropiedades, fondo);
 }
 
 .card-img-top {
@@ -24,11 +30,19 @@
     border-style: none;
 }
 
-.card-title, .card-text {
+.card-title{
     color: #fff;
     border: none;
 }
 
+.card-text {
+    @extend .card-title;
+}
+
 .col {
     border-style: none;
+}
+
+span {
+    color: rgb(35, 211, 49);
 }
