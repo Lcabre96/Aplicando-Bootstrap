@@ -1,7 +1,5 @@
 // MEDIA QUERYS //
 
-// INDEX QUERYS //
-
 @media (min-width: 1199px) {
     .btn-main {
         width: 70%;
@@ -73,6 +71,22 @@
     .img-nosotros {
         width: 80vw;
         margin: auto;
+    }
+    
+    .nosotros-seccion {
+        display: flex!important;
+        flex-direction: column;
+        width: 95vw;
+    }
 
+    .btn1 {
+        display: flex;
+        text-align: center;
+        width: 50%;
+        margin-left: 25%;
+        text-decoration: none;
+        padding: 0.5rem;
+        justify-content: center;
+        margin-top: 5%;
     }
 }
